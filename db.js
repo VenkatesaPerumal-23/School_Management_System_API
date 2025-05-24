@@ -11,7 +11,7 @@ const db = mysql.createConnection({
 
 db.connect((err) => {
   if (err) throw err;
-  console.log('✅ Connected to Railway MySQL!');
+  console.log('Connected to Railway MySQL!');
 });
 
 module.exports = db;

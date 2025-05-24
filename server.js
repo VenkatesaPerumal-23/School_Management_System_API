@@ -43,7 +43,7 @@ app.get('/listSchools', (req, res) => {
 
   db.query('SELECT * FROM schools', (err, results) => {
     if (err) {
-      console.error("❌ Error fetching schools:", err.message);
+      console.error("Error fetching schools:", err.message);
       return res.status(500).json({ error: 'Database error' });
     }
 
